@@ -172,7 +172,9 @@ class DeansXRF(object):
         fig.update_traces(showlegend=show_legend)  
         fig.update_layout(title="Spectrum Scan",
                           xaxis_title="Energy (keV)",
-                          legend_title="Traces Displayed")
+                          legend_title="Traces Displayed",
+                          height=800,
+                          width=1250)
         fig.show()
         return self
     
@@ -210,10 +212,11 @@ class DeansXRF(object):
         else:
             fig1 = plotly.express.imshow(matrix.T, x=xs, y=zs, 
                                          color_continuous_scale="Turbo", 
-                                         aspect=10,  
+                                         aspect=9,  
                                          zmax=max_counts, 
                                          labels=dict(x="X [um]", y="Z [um]", color="Sum of Counts"))
         
-        fig1.update_layout(title={'text': str(self.energy)+" ± "+str(self.width)+" eV Emission Distribution"}) 
+        fig1.update_layout(title={'text': str(self.energy)+" ± "+str(self.width)+" eV Emission Distribution"}, 
+                           height=800, width=1250) 
         fig1.show()
         return self

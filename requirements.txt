@@ -1,5 +1,5 @@
-streamlit == 1.27.0
-numpy
+os
 pandas
-scipy
 plotly
+numpy
+plotly.express

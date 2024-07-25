@@ -33,5 +33,5 @@ DeansXRF is an interactive application for fast X-ray Fluorescence Spectroscopy 
     ```
 - Finished. Both plots are interactive and enable download.
   
-DeansXRF developed by Sierra Dean @ RIKEN SPring-8 Center (Japan) 2024
+DeansXRF developed by Sierra Dean @ RIKEN SPring-8 Center (Japan) 2024 <br />
 Email: ccnd@live.com
